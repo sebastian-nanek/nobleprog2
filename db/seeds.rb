@@ -11,8 +11,8 @@
 5.times do 
     user = Faker::Internet.user('username', 'email')
     User.create!(
-        name: user['username'],
-        email: user['email']
+        name: user[:username],
+        email: user[:email]
     )
 end
 
