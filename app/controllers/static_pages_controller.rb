@@ -1,9 +1,12 @@
+# frozen_string_literal: true
+
 class StaticPagesController < ApplicationController
   # localhost:3000/privacy?lang=en
   def privacy
-    if params[:lang] == 'pl'
+    case params[:lang]
+    when 'pl'
       render 'privacy_pl'
-    elsif params[:lang] == 'es'
+    when 'es'
       render 'privacy_es'
     end
   end
