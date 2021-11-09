@@ -32,6 +32,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'faker'
 gem 'kaminari'
+gem 'devise'
 
 gem 'rubocop'
 gem 'rubocop-rails'
