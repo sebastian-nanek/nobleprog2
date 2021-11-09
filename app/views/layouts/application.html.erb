@@ -20,7 +20,13 @@
       <%= link_to "Sign in", new_user_session_path %> | 
     <% end %>
     </div>
-
+    
+    <% if flash[:errors].present? %>
+      <p style="padding: 10px; background-color: red">
+      <%= flash[:errors] %>
+      </p>
+    <% end %> 
+    
     <hr>
     
     <%= yield %>
